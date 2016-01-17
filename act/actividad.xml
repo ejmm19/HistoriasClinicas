@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?><actividad tipo="Test">
+	
+<!-- Parte generica -->	
+	<!-- Indica que color de fondo se le pondra al flash (por defecto 0x8993A0) -->
+	<color_fondo>0x8993A0</color_fondo>
+	<!-- Indica que color se le pondra a los elementos del flash (por defecto 0x728F61) -->
+	<color_botones>0xff8a00</color_botones>
+	
+	<!-- Parametros nuevos - dic 2012 -->
+	<autor>Eric Martinez</autor>
+	<descripcionUsuario>autoevaluaci&amp;oacute;n historias clinicas</descripcionUsuario>
+	<origen_recursos></origen_recursos><xorigen_recursos>http://cdn.educaplay.com/recursos/67/2171854/</xorigen_recursos>
+	
+	<globalFeedback>1</globalFeedback>
+	
+	<!-- Indica si se mostrara al alumno la respuesta correcta o no, en caso de que el alumno no supere el ejercicio -->
+	<correccion>si</correccion>
+	<!-- Indica si la respuesta del alumno debe ser igual a la respuesta correcta en lo referente a las mayusculas y acentos, solo en el caso de que la forma de completar sea escrita -->
+	<sensible_mayusculas>no</sensible_mayusculas>
+	<sensible_acentos>no</sensible_acentos>
+	<!-- Indica si tiene un tiempo maximo para realizar la actividad, estara definido en segundos -->
+	<tiempo maximo="150">si</tiempo>
+     <registro>
+		<!-- Indica el tipo de registro:
+		- script -> registro a traves de un script (php, jsp, etx)
+		- scorm -> registreo a traves de scorp
+		-->
+		<tipo>script</tipo>
+		<!-- Indica la url del scrip, en caso de que el tipo sea script	-->
+		<url>http://www.educaplay.com/registro.php?idActividad=2171854&amp;t=d148c06273c73ec0461b6f82575ef353&amp;</url>
+		<!-- Indica los parametros a pasar al script, en caso de que el tipo sea script	-->
+		<parametros>
+			<!-- La etiqueta nombre contiene el nombre del parametro a pasar -->
+			<!-- La etiqueta valor contiene el valor al que hace referencia el parametro (buscara el nombre de la varible en flash):
+			- SCORE: puntuacion de la actividad, en porcentaje
+			- TIME: tiempo de la actividad, en segundos
+			- URL: direccion de la actividad
+			-->
+			<parametro id="1">
+				<nombre>score</nombre>
+				<valor>SCORE</valor>
+			</parametro>
+			<parametro id="2">
+				<nombre>time</nombre>
+				<valor>TIME</valor>
+			</parametro>
+			<parametro id="3">
+				<nombre>url</nombre>
+				<valor>URL</valor>
+			</parametro>
+		</parametros>
+	</registro>
+    
+<!-- Parte especifica -->
+	<titulo>Instrucciones</titulo>
+	<tituloActividad>Autoevaluacion Historias Clinicas</tituloActividad>
+	<enunciado>Responde a estas preguntas</enunciado>
+    <!-- parametro solo para la importación a ADR -->
+    <enunciado_edu>Autoevaluacion Historias Clinicas</enunciado_edu>
+    
+	<!-- Indica la forma de realizar la actividad, es decir la ayuda de la actividad -->
+	<descripcion>"Responde a las preguntas del test. Puede ocurrir que algunas preguntas sea obligatorio responderlas para pasar a las siguientes. Cuando llegues al final de las preguntas podrás dar a finalizar la actividad, de esta forma se te corregirán y obtendrás tu puntuación.</descripcion>
+	<!-- Indica el porcentaje de preguntas que deberan seran correctas para superar la actividad -->
+	<porcentaje_superar_actividad>85</porcentaje_superar_actividad>
+	<preguntas>
+		<!-- El atributo tipo indica las posibles preguntas que el profesor ha definido, hacen referencia a los cuatro tipos de preguntas:
+		- Respuesta escrita
+		- Respuesta escrita amplia
+		- Respuesta unica
+		- Respuesta multiple
+		-->
+                
+                        
+		<pregunta id="1" tipo="unica" obligatoria="si" feedback="">
+                	                
+		<enunciado tipo="texto" video="" videoStartTime="" audio="" >¿Cuál es el tiempo de conservación en el que se debe guardar una historia clínica?</enunciado>
+			<opciones>
+            	
+            	
+                <opcion resp="0">10 años</opcion>
+        		
+                <opcion resp="0">15 años</opcion>
+        		
+                <opcion resp="0">5 años</opcion>
+        		
+                <opcion resp="1">20 años </opcion>
+        					</opciones>
+		</pregunta>
+                
+                        
+		<pregunta id="2" tipo="unica" obligatoria="si" feedback="">
+                	                
+		<enunciado tipo="texto" video="" videoStartTime="" audio="" >¿Qué es una historia clínica?</enunciado>
+			<opciones>
+            	
+            	
+                <opcion resp="0">Un documento público, que no tiene ningún valor legal, Un documento  el cual no puede conservarse por ningún momento.</opcion>
+        		
+                <opcion resp="1">Es un documento privado, obligatorio y sometido a reserva; en el cual se registran cronológicamente las condiciones de salud del paciente, los actos médicos y los demás procedimientos ejecutados por el equipo de salud que interviene en su atención</opcion>
+        					</opciones>
+		</pregunta>
+                
+                        
+		<pregunta id="3" tipo="unica" obligatoria="si" feedback="">
+                	                
+		<enunciado tipo="texto" video="" videoStartTime="" audio="" > ¿Quiénes no tienen acceso a las historias clínicas?</enunciado>
+			<opciones>
+            	
+            	
+                <opcion resp="0">El usuario</opcion>
+        		
+                <opcion resp="0">El equipo de salud</opcion>
+        		
+                <opcion resp="0">las autoridades judiciales y de salud en los acosa previstos por la ley</opcion>
+        		
+                <opcion resp="1">Un pariente sin consentimiento de la persona.  </opcion>
+        					</opciones>
+		</pregunta>
+                
+                        
+		<pregunta id="4" tipo="unica" obligatoria="si" feedback="">
+                	                
+		<enunciado tipo="texto" video="" videoStartTime="" audio="" >¿En dónde debe guardarse la historia clínica?</enunciado>
+			<opciones>
+            	
+            	
+                <opcion resp="0">En un lugar publico</opcion>
+        		
+                <opcion resp="1">En un lugar restringido </opcion>
+        		
+                <opcion resp="0">En un parque.</opcion>
+        		
+                <opcion resp="0">En un Banco</opcion>
+        					</opciones>
+		</pregunta>
+                	</preguntas>
+    
+    	<!-- Indica el numero de posibles preguntas que el profesor ha definido para el ejercicio -->
+	<numero_preguntas_totales>4</numero_preguntas_totales>
+	<!-- Indica el numero de preguntas que apareceran, seleccionadas de forma aleatoria -->
+	<numero_preguntas_visibles>4</numero_preguntas_visibles>
+	<orden_preguntas>ALEATORIO</orden_preguntas>
+    <!-- Indica el tipo de ordenacion usado-->
+	<puntos>100</puntos>
+    <!-- Indica los margenes para la puntuación por valoración-->
+    <margenes activo='no'>
+        	</margenes>
+    
+    <idioma>
+
+		<txtPuntos>Puntos</txtPuntos>
+		<txtTiempo>Tiempo</txtTiempo>
+		<txtTiempoRestante>Tiempo Restante</txtTiempoRestante>
+		<txtResultado>Resultado</txtResultado>
+		<txtPreguntas>Preguntas</txtPreguntas>
+		<txtHasAprobado>Has aprobado!!</txtHasAprobado>
+		<txtHasSuspendido>No has superado la actividad</txtHasSuspendido>
+		<txtPorcentajeMinimo1>Es necesario alcanzar un </txtPorcentajeMinimo1>
+		<txtPorcentajeMinimo2> para aprobar</txtPorcentajeMinimo2>
+		<txtContestadas>contestadas</txtContestadas>
+		<txtNoContestadas>no contestadas</txtNoContestadas>
+		<txtNumObligatoria1>Has contestado</txtNumObligatoria1>
+		<txtNumObligatoria2>Pregunta obligatoria</txtNumObligatoria2>
+		<txtNumObligatorias1>Has contestado</txtNumObligatorias1>
+		<txtNumObligatorias2>preguntas obligatorias</txtNumObligatorias2>
+		<txtTuPuntuacionEs>Tu puntuación es</txtTuPuntuacionEs>
+		<txtMal>Mal</txtMal>
+		<txtBien>Bien</txtBien>
+		<txtObligatoria>Pregunta obligatoria</txtObligatoria>
+		<txtProgreso>Progreso</txtProgreso>
+		<txtFinalizar>Finalizar</txtFinalizar>
+		<txtVerCorregir>Ver Corrección</txtVerCorregir>
+		
+		<txtRespuestaIncorrecta>Respuesta Incorrecta</txtRespuestaIncorrecta>
+		<txtTituloActividadNoSuperada>Actividad no superada</txtTituloActividadNoSuperada>
+		<txtActividadNoSuperada>No has superado el porcentaje de aciertos para aprobar esta actividad.</txtActividadNoSuperada>
+		<txtTituloActividadSuperada>Actividad Superada</txtTituloActividadSuperada>
+		<txtActividadSuperada>Enhorabuena has superado la actividad</txtActividadSuperada>
+		<txtTiempoSuperado>Has superado el tiempo máximo para esta actividad</txtTiempoSuperado>
+		<txtCerrar>Cerrar</txtCerrar>
+		<txtRespuestaCorrecta>Respuesta correcta</txtRespuestaCorrecta>
+		<txtOtrasRespuestas>Otras respuestas</txtOtrasRespuestas>
+		<txtTituloRespuestaCorrecta>Respuesta correcta</txtTituloRespuestaCorrecta>
+		<txtBoxRespuestaCorrecta>Enhorabuena has superado la actividad</txtBoxRespuestaCorrecta>
+		<txtPosiblesRespuestas>Posibles respuestas</txtPosiblesRespuestas>
+		<txtTuRespuesta>Tu respuesta</txtTuRespuesta>
+
+   		<txtSensibleMayusculas>Diferencia entre mayúsculas y minúsculas</txtSensibleMayusculas>
+		<txtNoSensibleMayusculas>No diferencia entre mayúsculas y minúsculas</txtNoSensibleMayusculas>
+		<txtSensibleAcentos>Sensible a acentos</txtSensibleAcentos>
+		<txtNoSensibleAcentos>No sensible a acentos</txtNoSensibleAcentos>
+
+		<txtTituloErrorAudio>Error en la Actividad</txtTituloErrorAudio>
+		<txtErrorAudioSoportado>Audio no encontrado o no soportado por el navegador</txtErrorAudioSoportado>
+		
+		<txtAceptar>Aceptar</txtAceptar>
+		<txtTiempoMaximo>Tiempo máximo</txtTiempoMaximo>
+		<txtSensible>Sensible</txtSensible>
+		<txtMayusculasMinusculas>Mayúsculas/Minúsculas</txtMayusculasMinusculas>
+		<txtAcentos>Acentos</txtAcentos>
+		<txtComenzar>Comenzar</txtComenzar>
+		<txtAutor>Autor</txtAutor>
+		<txtAyuda>Ayuda</txtAyuda>
+		<txtMostrarMas>Mostrar más</txtMostrarMas>
+		<txtMostrarMenos>Mostrar menos</txtMostrarMenos>
+		<txtReiniciar>Reiniciar</txtReiniciar>
+		<txtVolverJugar>Volver a jugar</txtVolverJugar>
+		<txtResponder>Responder</txtResponder>
+		<txtRegistrarse>Registrarse</txtRegistrarse>
+		<txtAcceder>Acceder</txtAcceder>
+		<txtCompartirResultado>Compartir resultado</txtCompartirResultado>
+		<txtPantallaCompleta>Pantalla completa</txtPantallaCompleta>
+		<txtImprimir>Imprimir</txtImprimir>
+		<txtSiguiente>Siguiente</txtSiguiente>
+		<txtAnterior>Anterior</txtAnterior>
+		<txtInfoAdicional>Información adicional</txtInfoAdicional>
+		
+	</idioma>
+
+</actividad>
